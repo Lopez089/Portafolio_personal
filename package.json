@@ -1,0 +1,30 @@
+{
+  "name": "portafolios-juan-lopez",
+  "version": "1.0.0",
+  "description": "Este es el portafolio de Juan Lopez",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "keywords": [
+    "frontend, desarrolloWeb"
+  ],
+  "author": "@juanlopezara",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "express": "^4.17.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "nodemailer": "^6.1.1",
+    "popper.js": "^1.15.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^2.2.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2"
+  }
+}

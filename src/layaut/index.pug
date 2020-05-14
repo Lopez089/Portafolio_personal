@@ -1,0 +1,33 @@
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+
+    link(href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet")
+    link(rel='stylesheet' href='css/main.css')
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous")
+    title Portafolio Juan Lopez
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    script(async src="https://www.googletagmanager.com/gtag/js?id=UA-142140061-1")
+    script
+      |window.dataLayer = window.dataLayer || [];
+      |function gtag(){dataLayer.push(arguments);}
+      |gtag('js', new Date())
+      |gtag('config', 'UA-142140061-1')
+
+  body
+    .contenedor
+      include state.pug
+      include header.pug
+      include section.pug
+      include footer.pug
+  
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+  script(src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js")
+  script(src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js")
+  script(src='/js/cont.min.js', charset='utf-8')
+  script(src='/js/state.js', charset='utf-8')
+

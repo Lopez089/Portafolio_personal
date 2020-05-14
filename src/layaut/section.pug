@@ -1,0 +1,57 @@
+block section
+    section#Logros
+        .contenedorSection
+            .cabeceraSection
+                h2.t2 LOGROS
+            each logros, index in state.logro
+                .contenidoSection
+                    .logro
+                        if index%2 === 0
+                            .info
+                                img(src=logros.imgLogo)
+                                p.p4=logros.descripcionTrabajos
+                                ul.tecnologias
+                                    each val, i in logros.Tecnologias
+                                        li.fab(class=logros.Tecnologias[i])
+                            .enlace
+                                a(href=logros.enlace target='_blank').fas.fa-link
+                        else
+                    if index === 0
+                        .ano
+                            .contendorLineaHorizontalL
+                            .contAnos
+                                .circulo
+                                    p=logros.fecha
+                            .menosAno
+                    else
+                        .ano
+                            if index%2 === 0
+                                .contendorLineaHorizontalL
+                                .masAno
+                                .contAnos
+                                    .circulo
+                                        p=logros.fecha
+                                if index !== state.logro.length-1
+                                    .menosAno
+                                else
+                            else
+                                .masAno
+                                .contAnos
+                                    .circulo
+                                        p=logros.fecha
+                                .contendorLineaHorizontalR
+                                if index !== state.logro.length-1
+                                    .menosAno
+                                else
+                        .logro1
+                            if index%2 === 1
+                                .info
+                                    img(src=logros.imgLogo)
+                                    p.p4=logros.descripcionTrabajos
+                                    ul.tecnologias
+                                        each val, i in logros.Tecnologias
+                                            li.fab(class=logros.Tecnologias[i])
+                                .enlace
+                                    a(href=logros.enlace target='_blank').fas.fa-link
+                            else
+            a.mas(href='https://www.linkedin.com/in/juanlopezaragon' target='_blank') Mas logros

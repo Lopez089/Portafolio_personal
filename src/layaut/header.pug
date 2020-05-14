@@ -1,0 +1,17 @@
+block header
+    .cabeceraHeader
+        .fondo
+        .img
+            img(alt="Foto Juan Lopez" src="img/2.jpg").foto
+    .header
+        .descripcionHeader
+            .rol
+                h1.t1=state.nombre
+                p.t5=state.rol
+            .descripcion
+                p.p3=state.descripcion
+            .redessociales
+                ul.RedesSociales
+                    each rss in state.rs
+                        li
+                        a(class='fab' class=rss.icono , href=rss.url target='_blank')

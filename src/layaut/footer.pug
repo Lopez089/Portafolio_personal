@@ -1,0 +1,26 @@
+block footer
+footer
+    .ContenedorFooter
+      .cabeceraFooter
+        h2.t2  CONTACTO
+      .form
+        p#envio
+        form#form.p4
+            input(type="text", name="nombre" id='nombre' placeholder="Tu Nombre")
+            p(id='name' class='error')
+            input(type="text", name="compania" id='compania' placeholder="Tu Compañia")
+            p(id='compani' class='error')
+            input(type="email", name="email" id='email' placeholder="Tu Email")
+            p(id='correo' class='error')
+            input(type="text", name="mensaje" id='mensaje' placeholder="Tu Mensaje")
+            p(id='msg' class='error')
+            input(type='button' value='Enviar' onclick='enviar()')
+            p( class='error')
+      .contacto
+        h5 También puedes contactar
+        .ConctaCorreo
+          a(href='mailto:aragonlopezjuan87@gmail.com') aragonlopezjuan87@gmail.com
+          ul.RedesSociales
+            for rss in state.rs
+                    li
+                      a(class='fab' class=rss.icono , href=rss.url target='_blank')
