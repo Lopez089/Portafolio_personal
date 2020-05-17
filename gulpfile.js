@@ -9,7 +9,7 @@ gulp.task("pug", () => {
     .src("./src/layaut/index.pug")
     .pipe(
       pug({
-        pretty: false
+        pretty: true,
       })
     )
     .pipe(gulp.dest("./public"));
@@ -29,8 +29,8 @@ gulp.task("js", () => {
     .pipe(
       minify({
         ext: {
-          min: ".min.js"
-        }
+          min: ".min.js",
+        },
       })
     )
     .pipe(gulp.dest("./public/js"))
@@ -39,7 +39,7 @@ gulp.task("js", () => {
 
 gulp.task("serve", ["sass", "js"], () => {
   browserSync.init({
-    server: "./public"
+    server: "./public",
   });
 
   gulp.watch(
