@@ -430,53 +430,53 @@ form {
   }
 }
 
-@-webkit-keyframes enlaceOpaci {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 65;
-  }
-}
+// @-webkit-keyframes enlaceOpaci {
+//   0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 65;
+//   }
+// }
 
-@keyframes enlaceOpaci {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 65;
-  }
-}
+// @keyframes enlaceOpaci {
+//   0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 65;
+//   }
+// }
 
-@-webkit-keyframes enlace {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
+// @-webkit-keyframes enlace {
+//   0% {
+//     -webkit-transform: scale(1);
+//     transform: scale(1);
+//   }
+//   50% {
+//     -webkit-transform: scale(1.5);
+//     transform: scale(1.5);
+//   }
+//   100% {
+//     -webkit-transform: scale(1);
+//     transform: scale(1);
+//   }
+// }
 
-@keyframes enlace {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
+// @keyframes enlace {
+//   0% {
+//     -webkit-transform: scale(1);
+//     transform: scale(1);
+//   }
+//   50% {
+//     -webkit-transform: scale(1.5);
+//     transform: scale(1.5);
+//   }
+//   100% {
+//     -webkit-transform: scale(1);
+//     transform: scale(1);
+//   }
+// }
 
 @-webkit-keyframes error {
   0% {
